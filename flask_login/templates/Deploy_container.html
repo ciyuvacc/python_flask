@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Containers{% endblock %}
+{% block page_content %}
+
+<form method="post" action="/Deploy_container"  method = "get">
+
+<h2>Image Configuration</h2>
+<hr/>
+
+Image Name:<font size="4">  <input type="text" name="imagename" value="tomcat:jre7"></br>
+
+<h2>Environment Variables</h2>
+<hr/>
+ 
+Name:<font size="4"> <input type="text" name="name" value="Null">   Value:<font size="4"> <input type="text" name="value"  value="Null"></br>
+
+<h2>Resource Limits</h2>
+<hr/>
+
+CPUs:<font size="4"> <input  type="text" name="cpus" value="0">  Memory (MB):<font size="4"> <input type="text" name="memory" value="0"></br>
+
+<hr/>
+<span style="display:green; text-align:right"><input type="submit" value="Deploy">
+</form>
+{% endblock %}
