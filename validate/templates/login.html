@@ -1,0 +1,13 @@
+<!DOCTYP html>
+<html>
+    <body>
+       <form action="/validate/" method="post">
+         {% if err %}
+         <span style="color:red"> {{err}}</span><br/>
+         {% endif %}
+         name: <input type="text" name="username" value={{ name }}/><br/>
+         password:<input type="password" name="password" value={{ password }}/><br />
+         <input type="submit" value="login"/>
+       </form>
+   </body>
+</html>

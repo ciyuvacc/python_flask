@@ -1,0 +1,27 @@
+<!DOCTYP html>
+<html>
+   <head>
+   </head>
+    <body>
+         <table>
+             <thead>
+                  <tr>
+                            <td>ip</td>
+                            <td>url</td>
+                            <td>code</td>
+                            <td>count</td> 
+                  </tr>
+               </thead>   
+             <tbody>
+               {% for log in logls %} 
+                  <tr>
+                    <td>{{ log[2] }}</td>
+                    <td>{{ log[1] }}</td>
+                    <td>{{ log[0] }}</td>
+                    <td>{{ log[3] }}</td>
+                  </tr>
+               {% endfor%}
+             </tbody>
+      </table>
+    </body>
+</html>
