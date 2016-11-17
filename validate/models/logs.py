@@ -1,6 +1,6 @@
 #!/usr/bin/env  python
 def logs():
-    h = open('/python/li/source/www.log')
+    h = open('./source/www.log')
     loglist=[]
     for _str in h:
         _ip = _str.split(' ')[0]
